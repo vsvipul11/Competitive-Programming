@@ -22,7 +22,8 @@ int main() {
 	             }else{
 	               c=0;  
 	             }
-	             
+	          
+			 
 	         }
 	     }
 	     if(c==k){

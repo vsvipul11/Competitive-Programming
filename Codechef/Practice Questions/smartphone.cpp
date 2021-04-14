@@ -11,21 +11,20 @@ int main() {
 	    cin>>a[i];
 	   
 	}
+
+
+sort(a,a+n);
 	
-	int sum=0;
-	int newsum=0;
+	long long sum=0;
+	long long newsum=0;
+	long long x = n;
 
-
-for(long long i = 0 ; i< n ; i++){
-    for(long long j = 0 ; j< n ; j++){
-        if(a[j]>=a[i]){
-            sum += a[i]; 
-        }
-        
-    }
+for(long long i = 0 ; i < n ; i++){
+    sum = a[i]*x;
     
     newsum = max(sum , newsum);
-    sum=0;
+    sum = 0;
+    x=x-1;
 }
 cout<<newsum;
 	return 0;
